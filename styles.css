@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #2854a2;
+  --secondary-color: white;
+  --third-color: #cdcdcd;
+  --primary-back: #1b396a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body > header {
+  padding: 0;
+  width: inherit;
+}
+
+body > header > nav {
+  background-color: var(--primary-color);
+}
+
+body > header > nav > ul li {
+  color: var(--secondary-color);
+}
+
+body > header > nav > ul > li:first-of-type > a {
+  color: var(--secondary-color);
+}
+
+body > header > nav > ul > li:nth-of-type(2) > a {
+  color: var(--third-color);
+}
+body > header > nav > ul > li:nth-of-type(3) > a {
+  color: var(--third-color);
+}
+
+nav ul li a:hover {
+  background-color: var(--primary-back);
+}
+
+div {
+  text-align: center;
+}
+
+article {
+  text-align: left;
+}
+
+[role="button"] {
+  display: block;
+  border-radius: 0;
+  background-color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
